@@ -1,0 +1,227 @@
+/* login.css */
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    padding: 40px 30px;
+    border-radius: 32px;
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+
+.login-header {
+    margin-bottom: 35px;
+}
+
+.logo-icon {
+    font-size: 40px;
+    margin-bottom: 16px;
+    display: inline-block;
+}
+
+.login-header h1 {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -0.8px;
+    color: var(--text-main);
+    margin-bottom: 8px;
+}
+
+.login-header p {
+    color: var(--text-secondary);
+    font-size: 15px;
+}
+
+/* Form Styles */
+.login-form {
+    text-align: left;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 8px;
+    margin-left: 4px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 16px;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    background-color: #f8fafc;
+    font-family: inherit;
+    font-size: 15px;
+    transition: all 0.2s ease;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: var(--primary);
+    background-color: white;
+    box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.1);
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 13px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-secondary);
+    cursor: pointer;
+}
+
+.forgot-link {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 16px;
+    border-radius: 18px;
+    border: none;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.btn-login:active {
+    transform: scale(0.98);
+}
+
+.login-footer {
+    margin-top: 30px;
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+.login-footer a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* Ottimizzazione Mobile */
+@media (max-width: 480px) {
+    .login-container {
+        padding: 30px 20px;
+        box-shadow: none;
+        background: transparent;
+    }
+}
+
+/* Specifico per registrazione se necessario */
+.form-options .remember-me a {
+    text-decoration: underline;
+    color: var(--primary);
+}
+
+/* Effetto al passaggio del mouse sui link del footer */
+.login-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Miglioramento accessibilità input */
+.input-group input::placeholder {
+    color: #94a3b8;
+    opacity: 0.8;
+}
+
+/* --- Nuove classi per messaggi di Errore e Avviso --- */
+
+.error-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.status-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Variante per il pulsante di ritorno (Action Button) */
+.btn-secondary {
+    display: inline-block;
+    width: 100%;
+    padding: 16px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 18px;
+    background-color: #f1f5f9;
+    color: var(--text-main);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    transition: all 0.2s ease;
+    border: 1px solid #e2e8f0;
+    text-align: center;
+}
+
+.btn-secondary:hover {
+    background-color: #e2e8f0;
+}
+
+/* Stile per i titoli di errore specifici */
+.error-title {
+    color: #ef4444;
+    /* Rosso soft per errori */
+    font-weight: 800;
+}
+
+.warning-title {
+    color: #f59e0b;
+    /* Arancione per avvisi (es. utente già esistente) */
+    font-weight: 800;
+}
+
+/* Animazione d'ingresso per i messaggi */
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.login-container {
+    animation: fadeInScale 0.4s ease-out;
+}
+
+.btn-login {
+    color: white !important;
+    text-decoration: none !important;
+}
