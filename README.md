@@ -1,6 +1,6 @@
-# FlowADHD — Deep Focus PWA 🧠✨
+# FocusFlow — Deep Focus PWA 🧠✨
 
-**FlowADHD** è una Progressive Web App (PWA) progettata specificamente per persone con ADHD. A differenza delle comuni to-do list, FlowADHD funge da "protesi cognitiva", eliminando le distrazioni e fornendo un supporto visivo immediato per combattere la cecità temporale (*time blindness*) e la paralisi decisionale.
+**FocusFlow** è una Progressive Web App (PWA) progettata specificamente per persone con ADHD. A differenza delle comuni to-do list, FocusFlow funge da "protesi cognitiva", eliminando le distrazioni e fornendo un supporto visivo immediato per combattere la cecità temporale (*time blindness*) e la paralisi decisionale.
 
 ![Licenza](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Versione](https://img.shields.io/badge/version-1.0.0-purple.svg)
@@ -30,7 +30,7 @@ L'obiettivo è offrire un ambiente digitale minimalista e "premio" a un costo ac
 * **Frontend:** HTML5, CSS3 (Custom Modern UI)
 * **Design System:** Glassmorphism & Apple-style Squircle UI
 * **Font:** [Plus Jakarta Sans](https://fonts.google.com/specimen/Plus+Jakarta+Sans) (scelto per l'alta leggibilità)
-* **PWA:** Supporto per installazione su iOS/Android e funzionamento offline.
+* **PWA:** Supporto per installazione su iOS/Android direttamente da browser.
 
 ## 🎨 Design Principles (ADHD-Friendly)
 * **Cognitive Load Reduction:** Solo 3-4 azioni principali visibili contemporaneamente.
