@@ -1,0 +1,156 @@
+/* Eredita font-family: 'Plus Jakarta Sans' già definita in body nel tuo base.css */
+.insert-card {
+    background: var(--card-bg);
+    padding: 24px;
+    border-radius: 28px;
+    /* Allineato ai tuoi dashboard-header-stats */
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+}
+
+.task-border {
+    border-top: 5px solid var(--primary);
+}
+
+.memory-border {
+    border-top: 5px solid #f59e0b;
+}
+
+.insert-title {
+    font-size: 20px;
+    font-weight: 800;
+    margin: 12px 0;
+    letter-spacing: -0.5px;
+}
+
+/* Stile Input coerente con l'avatar e i pulsanti esistenti */
+.custom-input {
+    width: 100%;
+    padding: 14px 18px;
+    border-radius: 14px;
+    border: 1px solid #e2e8f0;
+    font-family: inherit;
+    /* Fondamentale per mantenere il font Plus Jakarta */
+    font-size: 15px;
+    background-color: #f1f5f9;
+    color: var(--text-main);
+    transition: all 0.2s ease;
+}
+
+.custom-input:focus {
+    outline: none;
+    border-color: var(--primary-light);
+    background-color: white;
+    box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.1);
+}
+
+.insert-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+.form-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.time-input,
+.date-input {
+    flex: 1;
+    font-weight: 700;
+}
+
+.cancel-link {
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+/* Adattamento per Desktop già presente in base.css, qui lo rifiniamo */
+@media (min-width: 768px) {
+    .grid-layout {
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+    }
+}
+
+.btn-primary {
+    font-family: 'Plus Jakarta Sans';
+    color: #ffffff;
+}
+
+.cancel-link {
+    color: #000000;
+}
+
+/* Toast Notification Style */
+.toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.diary-toast {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 16px 20px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    min-width: 280px;
+    transform: translateX(120%);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    pointer-events: auto;
+}
+
+.diary-toast.show {
+    transform: translateX(0);
+}
+
+.toast-icon {
+    width: 40px;
+    height: 40px;
+    background: var(--primary);
+    color: white;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.toast-content h4 {
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--text-main);
+    margin: 0;
+}
+
+.toast-content p {
+    font-size: 12px;
+    color: var(--text-secondary);
+    margin: 2px 0 0 0;
+}
+
+/* Animazione per l'icona (opzionale) */
+.toast-icon i {
+    animation: bounce 0.5s ease;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
