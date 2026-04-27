@@ -1,0 +1,318 @@
+/* --- Layout Contenuto Impostazioni --- */
+.settings-content {
+    padding: 0 24px 120px; /* Aggiunto padding-bottom per non coprire l'ultima section con la navbar */
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.settings-group {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.group-title {
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    letter-spacing: 0.5px;
+    margin-left: 4px;
+}
+
+.settings-card {
+    background: var(--card-bg);
+    padding: 24px;
+    border-radius: 28px;
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+/* --- Stili dei Form --- */
+.settings-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-field label {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-left: 4px;
+}
+
+.custom-input {
+    width: 100%;
+    padding: 14px 18px;
+    border-radius: 14px;
+    border: 1px solid #e2e8f0;
+    background: #f1f5f9;
+    font-family: inherit;
+    font-size: 15px;
+    color: var(--text-main);
+    transition: all 0.3s ease;
+}
+
+.custom-input:focus {
+    outline: none;
+    border-color: var(--primary);
+    background: white;
+    box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.1);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+/* --- Selettore Profilo (Toggle Moderno) --- */
+.toggle-container {
+    display: flex;
+    background: #f1f5f9;
+    padding: 4px;
+    border-radius: 12px;
+    gap: 4px;
+}
+
+.toggle-container input[type="radio"] {
+    display: none;
+}
+
+.toggle-container label {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.2s;
+    margin: 0;
+}
+
+.toggle-container input[type="radio"]:checked + label {
+    background: white;
+    color: var(--primary);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* --- Bottoni --- */
+.btn-save {
+    width: 100%; /* Allargato come gli elementi sopra */
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 16px;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+    margin-top: 10px;
+}
+
+.btn-save:active {
+    transform: scale(0.98);
+}
+
+.logout-link {
+    font-size: 13px;
+    font-weight: 700;
+    color: #ef4444;
+    text-decoration: none;
+    padding: 8px 16px;
+    background: #fee2e2;
+    border-radius: 10px;
+}
+
+/* --- Zona Pericolosa --- */
+.danger-text {
+    color: #ef4444;
+}
+
+.danger-card {
+    border: 1px solid #fee2e2;
+}
+
+.danger-card p {
+    font-size: 13px;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.btn-delete-account {
+    width: 100%;
+    background: transparent;
+    color: #ef4444;
+    border: 2px solid #ef4444;
+    padding: 14px;
+    border-radius: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-delete-account:hover {
+    background: #ef4444;
+    color: white;
+}
+
+/* --- Adattamenti Desktop --- */
+@media (min-width: 768px) {
+    .settings-content {
+        margin: 0;
+        padding-bottom: 120px;
+    }
+}
+
+.status-widget {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    background-color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    display: flex;
+    align-items: center;
+}
+
+.status-widget.hide {
+    top: -100px;
+    opacity: 0;
+}
+
+.widget-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    color: #1a1a1a;
+    font-size: 0.95rem;
+}
+
+.widget-icon {
+    font-size: 1.2rem;
+}
+
+/* Variante per errori (opzionale) */
+.status-widget.error {
+    border-left: 4px solid #ff4d4d;
+}
+
+/* Custom Warning Extension */
+:root {
+    --warning-color: #f59e0b; /* Ambra moderno */
+    --warning-bg: #fffbeb;
+}
+
+.warning-container {
+    margin: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 24px;
+    border-left: 6px solid var(--warning-color);
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    animation: slideIn 0.4s ease-out;
+}
+
+.warning-icon {
+    width: 48px;
+    height: 48px;
+    background: var(--warning-bg);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+/* Effetto pulsante sull'icona per attirare l'attenzione */
+.pulse {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--warning-color);
+    border-radius: 14px;
+    opacity: 0.2;
+    animation: warning-pulse 2s infinite;
+}
+
+.warning-content {
+    flex-grow: 1;
+}
+
+.warning-title {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--text-main);
+    margin-bottom: 2px;
+}
+
+.warning-text {
+    font-size: 13px;
+    color: var(--text-secondary);
+    line-height: 1.4;
+}
+
+.warning-close {
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 22px;
+    cursor: pointer;
+    padding: 5px;
+    transition: 0.2s;
+}
+
+.warning-close:hover {
+    color: var(--text-main);
+    transform: scale(1.1);
+}
+
+/* Animazioni */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes warning-pulse {
+    0% { transform: scale(1); opacity: 0.2; }
+    50% { transform: scale(1.1); opacity: 0.1; }
+    100% { transform: scale(1); opacity: 0.2; }
+}
+
+/* Adattamento Desktop */
+@media (min-width: 768px) {
+    .warning-container {
+        margin: 20px 40px;
+    }
+}
