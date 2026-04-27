@@ -161,6 +161,14 @@ $work_end = (double) $work_end[0] + ($work_end[1] / 60) + ($work_end[2] / 3600);
         </nav>
     </div>
 
+    <?php
+    if ($type == "worker") {
+        echo "<script>let dayType = 'lavorativa'</script>";
+    } else {
+        echo "<script>let dayType = 'scolastica'</script>";
+    }
+    ?>
+
     <script>
         const work_start = <?php echo json_encode($work_start); ?>;
         const work_end = <?php echo json_encode($work_end); ?>;

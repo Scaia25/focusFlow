@@ -161,7 +161,7 @@ function aggiornaRadarIperfocus() {
     const radarSvg = document.querySelector('.time-radar');
     const radarInfo = document.querySelector('.radar-info');
 
-    const mattinaLimite = 6.0;
+    const mattinaLimite = work_start - 2;
 
     // Funzione di supporto per svuotare e riempire con stile
     const setStatusLayout = (icon, title, subtext, modeClass) => {
@@ -197,10 +197,9 @@ function aggiornaRadarIperfocus() {
         // --- MOOD LAVORO (Ripristina barra originale) ---
         radarSvg.style.display = "block";
         radarContainer.className = "time-radar-container";
-
-        // Puliamo radarInfo per rimettere la struttura originale se era stata sovrascritta
-        radarInfo.innerHTML = `
-            <span class="radar-label" id="radar-label">Giornata lavorativa</span>
+            // Puliamo radarInfo per rimettere la struttura originale se era stata sovrascritta
+            radarInfo.innerHTML = `
+            <span class="radar-label" id="radar-label">Giornata ` + dayType + `</span>
             <span class="radar-percent" id="radar-percent-text">0%</span>
         `;
 
