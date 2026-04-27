@@ -3,7 +3,7 @@
 **FocusFlow** è una Progressive Web App (PWA) progettata specificamente per persone con ADHD. A differenza delle comuni to-do list, FocusFlow funge da "protesi cognitiva", eliminando le distrazioni e fornendo un supporto visivo immediato per combattere la cecità temporale (*time blindness*) e la paralisi decisionale.
 
 ![Licenza](https://img.shields.io/badge/license-MIT-blue.svg)
-![Versione](https://img.shields.io/badge/version-1.0.0-purple.svg)
+![Versione](https://img.shields.io/badge/version-1.2.0-purple.svg)
 ![Platform](https://img.shields.io/badge/platform-PWA-orange.svg)
 
 ## 🚀 Visione del Progetto
