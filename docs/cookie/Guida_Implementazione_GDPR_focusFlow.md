@@ -1,4 +1,4 @@
-# Guida Implementazione GDPR & Cookie Compliance — FlowADHD
+# Guida Implementazione GDPR & Cookie Compliance — focusFlow
 **Developer Guide — Technical Implementation**
 
 ---
@@ -34,7 +34,7 @@ Crea un file `cookie-banner.html` o integralo direttamente nell'`index.html`:
   <div class="cookie-banner__content">
     <h3>🍪 Utilizziamo i cookie</h3>
     <p>
-      FlowADHD utilizza cookie essenziali per il funzionamento dell'app 
+      focusFlow utilizza cookie essenziali per il funzionamento dell'app 
       e cookie analytics (opzionali) per migliorare l'esperienza utente.
     </p>
     <div class="cookie-banner__actions">
@@ -176,7 +176,7 @@ Crea `cookie-consent.js`:
 
 class CookieConsent {
   constructor() {
-    this.consentKey = 'flowadhd_cookie_consent';
+    this.consentKey = 'focusflow_cookie_consent';
     this.consentValue = this.getConsent();
     this.init();
   }
@@ -317,7 +317,7 @@ window.resetCookieConsent = function() {
   
   <section class="settings-section">
     <h2>Cookie Preferences</h2>
-    <p>Gestisci quali cookie FlowADHD può utilizzare.</p>
+    <p>Gestisci quali cookie focusFlow può utilizzare.</p>
     
     <div class="cookie-toggle">
       <div class="cookie-toggle__item">
@@ -332,7 +332,7 @@ window.resetCookieConsent = function() {
       <div class="cookie-toggle__item">
         <div class="cookie-toggle__info">
           <strong>Cookie Analytics</strong>
-          <p>Ci aiutano a capire come migliorare FlowADHD</p>
+          <p>Ci aiutano a capire come migliorare focusFlow</p>
         </div>
         <label class="toggle-switch">
           <input type="checkbox" id="analytics-toggle">
@@ -371,14 +371,14 @@ window.resetCookieConsent = function() {
 
 // Toggle Analytics
 const analyticsToggle = document.getElementById('analytics-toggle');
-const consent = localStorage.getItem('flowadhd_cookie_consent');
+const consent = localStorage.getItem('focusflow_cookie_consent');
 
 // Imposta lo stato iniziale
 analyticsToggle.checked = (consent === 'all');
 
 analyticsToggle.addEventListener('change', (e) => {
   const newConsent = e.target.checked ? 'all' : 'essential';
-  localStorage.setItem('flowadhd_cookie_consent', newConsent);
+  localStorage.setItem('focusflow_cookie_consent', newConsent);
   
   if (window.cookieConsent) {
     window.cookieConsent.applyConsent(newConsent);
@@ -420,7 +420,7 @@ document.getElementById('export-data').addEventListener('click', async () => {
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `flowadhd_data_${new Date().toISOString()}.json`;
+    a.download = `focusflow_data_${new Date().toISOString()}.json`;
     a.click();
     
     showToast('✅ Dati esportati con successo');
@@ -639,7 +639,7 @@ Per ogni fornitore, verifica che il DPA includa:
 - [ ] Cookie banner funzionante con opt-in esplicito
 - [ ] Privacy Policy, ToS, Cookie Policy pubblicate su `/privacy`, `/terms`, `/cookies`
 - [ ] Link alle policy nel footer di ogni pagina
-- [ ] Email `privacy@flowadhd.com` configurata e monitorata
+- [ ] Email `privacy@focusflow.com` configurata e monitorata
 - [ ] Endpoint `/api/user/export` implementato
 - [ ] Endpoint `/api/user/delete` implementato
 - [ ] DPA firmati con Anthropic e Stripe
@@ -664,7 +664,7 @@ Basandoti sul file Gantt ricevuto, ecco le task prioritarie:
 - [x] ✅ Scrivere Privacy Policy
 - [x] ✅ Scrivere Terms of Service
 - [x] ✅ Scrivere Cookie Policy
-- [ ] Pubblicare le policy su FlowADHD.com
+- [ ] Pubblicare le policy su focusFlow.com
 - [ ] Aggiungere link nel footer
 
 ### SPRINT 2: Cookie Banner (1 settimana)
@@ -721,7 +721,7 @@ Se preferisci una libreria preconfezionata:
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FlowADHD — Deep Focus for ADHD</title>
+  <title>focusFlow — Deep Focus for ADHD</title>
   
   <!-- CSS -->
   <link rel="stylesheet" href="/styles/main.css">
@@ -734,7 +734,7 @@ Se preferisci una libreria preconfezionata:
   
   <!-- App principale -->
   <div id="app">
-    <!-- ... contenuto FlowADHD ... -->
+    <!-- ... contenuto focusFlow ... -->
   </div>
   
   <!-- Cookie Banner -->
@@ -742,7 +742,7 @@ Se preferisci una libreria preconfezionata:
     <div class="cookie-banner__content">
       <h3>🍪 Utilizziamo i cookie</h3>
       <p>
-        FlowADHD utilizza cookie essenziali per il funzionamento dell'app 
+        focusFlow utilizza cookie essenziali per il funzionamento dell'app 
         e cookie analytics (opzionali) per migliorare l'esperienza utente.
       </p>
       <div class="cookie-banner__actions">
@@ -767,7 +767,7 @@ Se preferisci una libreria preconfezionata:
       <a href="/cookie-policy">Cookie Policy</a>
       <button onclick="window.resetCookieConsent()">Reset Cookie Preferences</button>
     </div>
-    <p>&copy; 2026 FlowADHD. Made with 💜 for ADHD brains.</p>
+    <p>&copy; 2026 focusFlow. Made with 💜 for ADHD brains.</p>
   </footer>
   
   <!-- JavaScript -->
@@ -781,7 +781,7 @@ Se preferisci una libreria preconfezionata:
 
 **Fine Guida Implementazione GDPR & Cookie Compliance**
 
-*Questa guida fornisce tutto il necessario per rendere FlowADHD conforme a GDPR, ePrivacy Directive e leggi italiane sulla privacy.*
+*Questa guida fornisce tutto il necessario per rendere focusFlow conforme a GDPR, ePrivacy Directive e leggi italiane sulla privacy.*
 
 **Prossimi Passi:**
 1. Implementare il cookie banner (1 settimana)

@@ -1,4 +1,4 @@
-# Cookie Policy — FlowADHD
+# Cookie Policy — focusFlow
 **Effective Date:** April 10, 2026  
 **Last Updated:** April 10, 2026
 
@@ -6,9 +6,9 @@
 
 ## 1. INTRODUCTION
 
-This Cookie Policy explains how **FlowADHD** uses cookies and similar tracking technologies when you visit our Progressive Web Application (PWA).
+This Cookie Policy explains how **focusFlow** uses cookies and similar tracking technologies when you visit our Progressive Web Application (PWA).
 
-**By using FlowADHD, you consent to the use of cookies in accordance with this policy.**
+**By using focusFlow, you consent to the use of cookies in accordance with this policy.**
 
 ---
 
@@ -21,14 +21,14 @@ Cookies are small text files stored on your device (computer, smartphone, tablet
 - **Persistent Cookies:** Stored on your device for a set period (e.g., 1 year)
 
 ### Types of Cookies by Purpose:
-- **First-Party Cookies:** Set by FlowADHD
+- **First-Party Cookies:** Set by focusFlow
 - **Third-Party Cookies:** Set by external services (e.g., Google Analytics)
 
 ---
 
 ## 3. COOKIES WE USE
 
-FlowADHD uses the following categories of cookies:
+focusFlow uses the following categories of cookies:
 
 ### 3.1 STRICTLY NECESSARY COOKIES (No Consent Required)
 
@@ -36,9 +36,9 @@ These cookies are **essential** for the Service to function and cannot be disabl
 
 | **Cookie Name** | **Purpose** | **Duration** | **Provider** |
 |----------------|------------|-------------|------------|
-| `session_token` | Keeps you logged in across page loads | Session | FlowADHD |
-| `csrf_token` | Protects against Cross-Site Request Forgery attacks | Session | FlowADHD |
-| `auth_refresh` | Allows silent re-authentication without re-login | 7 days | FlowADHD |
+| `session_token` | Keeps you logged in across page loads | Session | focusFlow |
+| `csrf_token` | Protects against Cross-Site Request Forgery attacks | Session | focusFlow |
+| `auth_refresh` | Allows silent re-authentication without re-login | 7 days | focusFlow |
 
 **Legal Basis:** These cookies are exempt from consent under GDPR (Article 5(3) ePrivacy Directive) because they are strictly necessary to provide the Service you requested.
 
@@ -50,10 +50,10 @@ These cookies remember your preferences to enhance user experience.
 
 | **Cookie Name** | **Purpose** | **Duration** | **Provider** |
 |----------------|------------|-------------|------------|
-| `theme_preference` | Remembers your Dark/Light mode choice | 1 year | FlowADHD |
-| `language_preference` | Stores your selected language (en/it/es) | 1 year | FlowADHD |
-| `timer_sound` | Remembers your preferred notification sound | 1 year | FlowADHD |
-| `hero_task_mode` | Stores your choice: 1 task vs. 3 tasks display | 1 year | FlowADHD |
+| `theme_preference` | Remembers your Dark/Light mode choice | 1 year | focusFlow |
+| `language_preference` | Stores your selected language (en/it/es) | 1 year | focusFlow |
+| `timer_sound` | Remembers your preferred notification sound | 1 year | focusFlow |
+| `hero_task_mode` | Stores your choice: 1 task vs. 3 tasks display | 1 year | focusFlow |
 
 **Legal Basis:** These cookies enhance functionality and are generally exempt from consent requirements, but you can reset them anytime.
 
@@ -61,7 +61,7 @@ These cookies remember your preferences to enhance user experience.
 
 ### 3.3 ANALYTICS COOKIES (Consent Required ✅)
 
-These cookies help us understand how users interact with FlowADHD so we can improve the Service.
+These cookies help us understand how users interact with focusFlow so we can improve the Service.
 
 **⚠️ IMPORTANT: We only set analytics cookies if you explicitly consent via the cookie banner.**
 
@@ -88,7 +88,7 @@ These cookies help us understand how users interact with FlowADHD so we can impr
 
 ### 3.4 MARKETING COOKIES (We DO NOT Use These)
 
-FlowADHD does **NOT** use marketing or advertising cookies. We do NOT:
+focusFlow does **NOT** use marketing or advertising cookies. We do NOT:
 - Show personalized ads
 - Sell your data to third parties
 - Use retargeting pixels (Facebook, Google Ads, etc.)
@@ -106,14 +106,14 @@ When you subscribe, **Stripe** may set cookies to prevent fraud and process paym
 | `__stripe_sid` | Session identifier | 30 minutes |
 
 **Privacy Policy:** [Stripe Privacy](https://stripe.com/privacy)  
-**Note:** These cookies are set directly by Stripe, not by FlowADHD.
+**Note:** These cookies are set directly by Stripe, not by focusFlow.
 
 ---
 
 ## 5. HOW TO MANAGE COOKIES
 
 ### 5.1 Cookie Banner (First Visit)
-When you first visit FlowADHD, you will see a cookie consent banner with two options:
+When you first visit focusFlow, you will see a cookie consent banner with two options:
 
 1. **Essential Only** → Only strictly necessary cookies (no analytics)
 2. **Accept All** → All cookies, including Google Analytics
@@ -140,13 +140,13 @@ Preferences > Privacy > Manage Website Data
 **Edge:**  
 Settings > Cookies and site permissions
 
-**⚠️ Warning:** Blocking all cookies may prevent FlowADHD from functioning properly (e.g., you won't stay logged in).
+**⚠️ Warning:** Blocking all cookies may prevent focusFlow from functioning properly (e.g., you won't stay logged in).
 
 ---
 
 ## 6. DO NOT TRACK (DNT) SIGNALS
 
-Some browsers allow you to enable a "Do Not Track" (DNT) signal. FlowADHD **respects DNT signals** and will:
+Some browsers allow you to enable a "Do Not Track" (DNT) signal. focusFlow **respects DNT signals** and will:
 - Disable Google Analytics if DNT is enabled
 - Only set strictly necessary cookies
 
@@ -166,9 +166,9 @@ We may update this Cookie Policy from time to time. Changes will be posted on th
 
 If you have questions about cookies or this policy, contact us:
 
-📧 **Email:** privacy@flowadhd.com  
+📧 **Email:** privacy@focusflow.com  
 📍 **Mailing Address:**  
-FlowADHD  
+focusFlow  
 Via Example, 123  
 25100 Brescia (BS)  
 Italy
@@ -177,7 +177,7 @@ Italy
 
 ## 9. DETAILED COOKIE TABLE (Technical Reference)
 
-For transparency, here is a complete list of all cookies used by FlowADHD:
+For transparency, here is a complete list of all cookies used by focusFlow:
 
 | **Cookie Name** | **Type** | **Purpose** | **Duration** | **Consent Required?** |
 |----------------|---------|------------|-------------|---------------------|
@@ -211,4 +211,4 @@ This Cookie Policy complies with:
 
 *This Cookie Policy is part of our broader commitment to transparency and data privacy.*
 
-**FlowADHD — Created with care for those who see the world differently.** 🌊
+**focusFlow — Created with care for those who see the world differently.** 🌊

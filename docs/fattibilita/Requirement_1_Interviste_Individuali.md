@@ -1,5 +1,5 @@
 # REQUIREMENT 1: Interviste Individuali
-**Progetto:** FlowADHD — Deep Focus PWA  
+**Progetto:** focusFlow — Deep Focus PWA  
 **Data:** 10 Aprile 2026  
 **Metodologia:** Interviste semi-strutturate con utenti target
 
@@ -42,7 +42,7 @@ Le interviste individuali sono state condotte per:
 6. Hai mai usato un'app di to-do list? Perché hai smesso (se l'hai fatto)?
 7. Ti è mai capitato di dimenticare dove hai messo un oggetto importante? Come lo hai ritrovato?
 
-### Domande Specifiche su FlowADHD (Strutturate)
+### Domande Specifiche su focusFlow (Strutturate)
 8. [Mostro mockup Radar Temporale] Questa visualizzazione del tempo ti sembra utile? Perché?
 9. [Mostro Hero Task] Preferisci vedere UN solo compito alla volta o una lista completa?
 10. [Spiego Brain Dump AI] Ti fideresti di un'AI per organizzare i tuoi pensieri caotici?
@@ -58,7 +58,7 @@ Le interviste individuali sono state condotte per:
 
 **Frequenza:** 5/5 intervistati riportano perdita di cognizione del tempo  
 **Causa principale:** Iperfocus su attività piacevoli + mancanza di ancore temporali esterne  
-**Implicazioni per FlowADHD:** Il Radar Temporale deve essere SEMPRE visibile, non nascondibile
+**Implicazioni per focusFlow:** Il Radar Temporale deve essere SEMPRE visibile, non nascondibile
 
 ---
 
@@ -67,7 +67,7 @@ Le interviste individuali sono state condotte per:
 
 **Frequenza:** 4/5 intervistati abbandonano to-do list troppo lunghe  
 **Causa principale:** Cognitive overload + mancanza di priorità chiara  
-**Implicazioni per FlowADHD:** Hero Task (1 solo compito visibile) è CRITICO, non opzionale
+**Implicazioni per focusFlow:** Hero Task (1 solo compito visibile) è CRITICO, non opzionale
 
 ---
 
@@ -76,7 +76,7 @@ Le interviste individuali sono state condotte per:
 
 **Frequenza:** 3/5 intervistati cercano attivamente una soluzione digitale  
 **Richiesta spontanea:** Sistema di "ricerca semantica" tipo *"Dove ho lasciato le chiavi martedì?"*  
-**Implicazioni per FlowADHD:** Memoria Esterna non è un "nice-to-have", è una killer feature
+**Implicazioni per focusFlow:** Memoria Esterna non è un "nice-to-have", è una killer feature
 
 ---
 
@@ -184,7 +184,7 @@ In base alle interviste, i seguenti requisiti sono stati aggiunti/modificati:
 ## 8. CONCLUSIONI E PROSSIMI PASSI
 
 ### ✅ Validazioni Confermate
-- Il concept di FlowADHD risponde a bisogni REALI e non soddisfatti
+- Il concept di focusFlow risponde a bisogni REALI e non soddisfatti
 - Gli utenti sono disposti a pagare per una soluzione ADHD-specifica
 - Il Radar Temporale e la Memoria Esterna sono percepiti come innovativi
 
@@ -201,6 +201,6 @@ In base alle interviste, i seguenti requisiti sono stati aggiunti/modificati:
 
 ---
 
-*Interviste condotte da: Team FlowADHD*  
+*Interviste condotte da: Team focusFlow*  
 *Periodo: Marzo 2026*  
 *Prossima revisione: Dopo lancio beta (Maggio 2026)*

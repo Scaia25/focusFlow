@@ -1,4 +1,4 @@
-# Privacy Policy — FlowADHD
+# Privacy Policy — focusFlow
 **Effective Date:** April 10, 2026  
 **Last Updated:** April 10, 2026
 
@@ -6,9 +6,9 @@
 
 ## 1. INTRODUCTION
 
-Welcome to **FlowADHD** ("we," "our," or "us"). We are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our Progressive Web Application (PWA) and related services (collectively, the "Service").
+Welcome to **focusFlow** ("we," "our," or "us"). We are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our Progressive Web Application (PWA) and related services (collectively, the "Service").
 
-**By using FlowADHD, you agree to the collection and use of information in accordance with this Privacy Policy.**
+**By using focusFlow, you agree to the collection and use of information in accordance with this Privacy Policy.**
 
 ---
 
@@ -29,7 +29,7 @@ When you register for an account or use our Service, we may collect the followin
 
 ### 2.2 Information Automatically Collected
 
-When you use FlowADHD, we automatically collect certain information:
+When you use focusFlow, we automatically collect certain information:
 
 | **Data Type** | **Purpose** | **Storage Method** |
 |--------------|------------|-------------------|
@@ -40,7 +40,7 @@ When you use FlowADHD, we automatically collect certain information:
 
 ### 2.3 Brain Dump & Task Data (Sensitive Content)
 
-FlowADHD allows you to input thoughts, tasks, and personal notes through the **Brain Dump** feature. This data may include:
+focusFlow allows you to input thoughts, tasks, and personal notes through the **Brain Dump** feature. This data may include:
 - Text notes (typed or voice-transcribed)
 - Task descriptions and deadlines
 - Personal reminders and memory logs
@@ -151,7 +151,7 @@ You can object to data processing based on legitimate interests.
 You can withdraw consent for optional features (e.g., analytics) at any time.
 
 ### 📧 **How to Exercise Your Rights**
-Send a request to: **privacy@flowadhd.com**  
+Send a request to: **privacy@focusflow.com**  
 We will respond within **30 days** as required by GDPR.
 
 ---
@@ -171,7 +171,7 @@ We implement industry-standard security measures to protect your data:
 - Regular security audits and penetration testing
 
 ### ⚠️ No Security is Perfect
-While we take extensive precautions, no system is 100% secure. If you become aware of a security breach, please contact us immediately at **security@flowadhd.com**.
+While we take extensive precautions, no system is 100% secure. If you become aware of a security breach, please contact us immediately at **security@focusflow.com**.
 
 ---
 
@@ -186,13 +186,13 @@ While we take extensive precautions, no system is 100% secure. If you become awa
 | **Analytics Cookies** | Measure app usage, improve UX | 1 year | ✅ Yes (opt-in) |
 
 ### 8.2 Analytics (Optional)
-We use **Google Analytics 4** (only if you consent) to understand how users interact with FlowADHD. You can opt-out anytime in **Settings > Privacy**.
+We use **Google Analytics 4** (only if you consent) to understand how users interact with focusFlow. You can opt-out anytime in **Settings > Privacy**.
 
 **No Analytics Cookies are set until you explicitly consent.**
 
 ### 8.3 Managing Cookies
 - **Browser Controls:** You can block cookies in your browser settings
-- **FlowADHD Settings:** Toggle analytics on/off in the app
+- **focusFlow Settings:** Toggle analytics on/off in the app
 - **Consent Withdrawal:** Click "Reset Cookie Preferences" in the footer
 
 For more details, see our **[Cookie Policy](#)**.
@@ -201,15 +201,15 @@ For more details, see our **[Cookie Policy](#)**.
 
 ## 9. CHILDREN'S PRIVACY
 
-FlowADHD is **NOT intended for users under 16 years old**.
+focusFlow is **NOT intended for users under 16 years old**.
 
-We do not knowingly collect data from children. If we discover that a user is under 16, we will delete their account immediately. If you are a parent/guardian and believe your child has created an account, contact us at **privacy@flowadhd.com**.
+We do not knowingly collect data from children. If we discover that a user is under 16, we will delete their account immediately. If you are a parent/guardian and believe your child has created an account, contact us at **privacy@focusflow.com**.
 
 ---
 
 ## 10. INTERNATIONAL DATA TRANSFERS
 
-FlowADHD is based in the **European Union (Italy)**. However, some service providers (e.g., Anthropic, Stripe) are based in the USA.
+focusFlow is based in the **European Union (Italy)**. However, some service providers (e.g., Anthropic, Stripe) are based in the USA.
 
 ### 🇪🇺 GDPR Compliance for USA Transfers
 - We use **Standard Contractual Clauses (SCCs)** approved by the EU Commission
@@ -228,7 +228,7 @@ We may update this Privacy Policy from time to time. Changes will be posted on t
 - Email to your registered address
 - In-app notification banner
 
-**Your continued use of FlowADHD after changes constitutes acceptance of the updated policy.**
+**Your continued use of focusFlow after changes constitutes acceptance of the updated policy.**
 
 ---
 
@@ -236,15 +236,15 @@ We may update this Privacy Policy from time to time. Changes will be posted on t
 
 If you have questions, concerns, or wish to exercise your GDPR rights, contact us:
 
-📧 **Email:** privacy@flowadhd.com  
+📧 **Email:** privacy@focusflow.com  
 📍 **Mailing Address:**  
-FlowADHD  
+focusFlow  
 Via Example, 123  
 25100 Brescia (BS)  
 Italy
 
 🇪🇺 **Data Protection Officer (DPO):**  
-For GDPR-specific inquiries, email: dpo@flowadhd.com
+For GDPR-specific inquiries, email: dpo@focusflow.com
 
 🛡️ **Supervisory Authority:**  
 You have the right to lodge a complaint with the Italian Data Protection Authority (Garante per la protezione dei dati personali):  
@@ -269,4 +269,4 @@ We do NOT use your data for automated decision-making or profiling (GDPR Art. 22
 
 ---
 
-**FlowADHD — Created with care for those who see the world differently.** 🌊
+**focusFlow — Created with care for those who see the world differently.** 🌊
