@@ -1,4 +1,4 @@
-# Terms of Service — FlowADHD
+# Terms of Service — focusFlow
 **Effective Date:** April 10, 2026  
 **Last Updated:** April 10, 2026
 
@@ -6,9 +6,9 @@
 
 ## 1. ACCEPTANCE OF TERMS
 
-Welcome to **FlowADHD**! These Terms of Service ("Terms," "ToS") govern your access to and use of the FlowADHD Progressive Web Application (PWA) and related services (collectively, the "Service").
+Welcome to **focusFlow**! These Terms of Service ("Terms," "ToS") govern your access to and use of the focusFlow Progressive Web Application (PWA) and related services (collectively, the "Service").
 
-**By creating an account or using FlowADHD, you agree to be bound by these Terms.**
+**By creating an account or using focusFlow, you agree to be bound by these Terms.**
 
 If you do NOT agree to these Terms, you may NOT use the Service.
 
@@ -16,23 +16,23 @@ If you do NOT agree to these Terms, you may NOT use the Service.
 
 ## 2. DEFINITIONS
 
-- **"FlowADHD," "we," "us," "our":** FlowADHD, a productivity PWA operated from Brescia, Italy.
+- **"focusFlow," "we," "us," "our":** focusFlow, a productivity PWA operated from Brescia, Italy.
 - **"User," "you," "your":** Any individual who accesses or uses the Service.
 - **"Account":** A registered user profile with associated data (tasks, notes, preferences).
 - **"Content":** Any data, text, images, or information you submit to the Service (Brain Dump, tasks, notes).
-- **"Subscription":** The paid plan (€5/month) that grants full access to FlowADHD features.
+- **"Subscription":** The paid plan (€5/month) that grants full access to focusFlow features.
 
 ---
 
 ## 3. ELIGIBILITY
 
 ### 3.1 Age Requirement
-You must be **at least 16 years old** to use FlowADHD.
+You must be **at least 16 years old** to use focusFlow.
 
 If you are under 16, you may NOT create an account. If we discover that a user is under 16, we will immediately terminate the account and delete all associated data.
 
 ### 3.2 Capacity to Contract
-By using FlowADHD, you represent that:
+By using focusFlow, you represent that:
 - You have the legal capacity to enter into a binding contract
 - You are not prohibited from using the Service under applicable law
 
@@ -41,7 +41,7 @@ By using FlowADHD, you represent that:
 ## 4. ACCOUNT REGISTRATION
 
 ### 4.1 Creating an Account
-To access FlowADHD, you must:
+To access focusFlow, you must:
 1. Provide a valid email address
 2. Create a secure password
 3. Accept these Terms and our Privacy Policy
@@ -67,7 +67,7 @@ Upon deletion:
 ## 5. SUBSCRIPTION AND PAYMENT
 
 ### 5.1 Pricing
-FlowADHD offers a subscription plan:
+focusFlow offers a subscription plan:
 - **Price:** €5/month (billed monthly)
 - **Free Trial:** 14 days (no credit card required during trial)
 
@@ -107,7 +107,7 @@ If your payment fails:
 ## 6. ACCEPTABLE USE POLICY
 
 ### 6.1 Permitted Use
-You may use FlowADHD for **personal, non-commercial purposes** to:
+You may use focusFlow for **personal, non-commercial purposes** to:
 - Manage tasks and improve focus
 - Use AI features for task decomposition
 - Store personal notes and reminders
@@ -130,12 +130,12 @@ You may NOT:
 ## 7. INTELLECTUAL PROPERTY
 
 ### 7.1 Ownership of the Service
-FlowADHD (including code, design, logo, and branding) is owned by us and protected by copyright, trademark, and other intellectual property laws.
+focusFlow (including code, design, logo, and branding) is owned by us and protected by copyright, trademark, and other intellectual property laws.
 
 **You do NOT acquire any ownership rights by using the Service.**
 
 ### 7.2 Your Content
-You retain ownership of all Content you submit to FlowADHD (tasks, Brain Dump notes, personal data).
+You retain ownership of all Content you submit to focusFlow (tasks, Brain Dump notes, personal data).
 
 **By using the Service, you grant us a limited license to:**
 - Store and process your Content to provide the Service
@@ -155,7 +155,7 @@ If you provide feedback, bug reports, or feature suggestions, you grant us a **p
 ## 8. THIRD-PARTY SERVICES
 
 ### 8.1 AI Processing (Anthropic Claude API)
-FlowADHD uses **Anthropic's Claude API** to power the Brain Dump and AI assistant features. By using these features, you agree to Anthropic's [Terms of Service](https://www.anthropic.com/legal/terms) and [Privacy Policy](https://www.anthropic.com/legal/privacy).
+focusFlow uses **Anthropic's Claude API** to power the Brain Dump and AI assistant features. By using these features, you agree to Anthropic's [Terms of Service](https://www.anthropic.com/legal/terms) and [Privacy Policy](https://www.anthropic.com/legal/privacy).
 
 **We are NOT responsible for Anthropic's service availability or data processing practices.**
 
@@ -170,7 +170,7 @@ The Service may contain links to third-party websites or services. We do NOT end
 ## 9. DISCLAIMERS AND LIMITATIONS OF LIABILITY
 
 ### 9.1 "AS-IS" Service
-FlowADHD is provided **"AS-IS"** and **"AS AVAILABLE"** without warranties of any kind, express or implied, including but not limited to:
+focusFlow is provided **"AS-IS"** and **"AS AVAILABLE"** without warranties of any kind, express or implied, including but not limited to:
 - Merchantability
 - Fitness for a particular purpose
 - Non-infringement
@@ -184,7 +184,7 @@ FlowADHD is provided **"AS-IS"** and **"AS AVAILABLE"** without warranties of an
 ### 9.2 No Medical or Mental Health Advice
 **⚠️ IMPORTANT DISCLAIMER:**
 
-FlowADHD is a **productivity tool**, NOT a medical device or mental health treatment.
+focusFlow is a **productivity tool**, NOT a medical device or mental health treatment.
 
 - The AI assistant is NOT a substitute for professional therapy or medical advice
 - We do NOT diagnose, treat, or cure ADHD or any other condition
@@ -212,7 +212,7 @@ The above limitations do NOT apply to:
 
 ## 10. INDEMNIFICATION
 
-You agree to **indemnify and hold harmless** FlowADHD, its officers, employees, and partners from any claims, damages, or expenses (including legal fees) arising from:
+You agree to **indemnify and hold harmless** focusFlow, its officers, employees, and partners from any claims, damages, or expenses (including legal fees) arising from:
 - Your violation of these Terms
 - Your misuse of the Service
 - Your violation of third-party rights (e.g., copyright infringement)
@@ -223,7 +223,7 @@ You agree to **indemnify and hold harmless** FlowADHD, its officers, employees, 
 ## 11. DATA PRIVACY AND SECURITY
 
 ### 11.1 Privacy Policy
-Your use of FlowADHD is also governed by our **[Privacy Policy](#)**, which explains how we collect, use, and protect your data.
+Your use of focusFlow is also governed by our **[Privacy Policy](#)**, which explains how we collect, use, and protect your data.
 
 ### 11.2 Data Security
 We implement industry-standard security measures, including:
@@ -289,7 +289,7 @@ These Terms are governed by the laws of **Italy** and the **European Union**, wi
 Any disputes arising from these Terms shall be subject to the **exclusive jurisdiction of the courts of Brescia, Italy**.
 
 ### 14.3 Informal Resolution (Encouraged)
-Before filing a lawsuit, we encourage you to contact us at **legal@flowadhd.com** to resolve disputes informally.
+Before filing a lawsuit, we encourage you to contact us at **legal@focusflow.com** to resolve disputes informally.
 
 ### 14.4 EU Consumer Rights
 If you are a consumer in the EU, you have the right to:
@@ -301,7 +301,7 @@ If you are a consumer in the EU, you have the right to:
 ## 15. MISCELLANEOUS
 
 ### 15.1 Entire Agreement
-These Terms, together with our Privacy Policy, constitute the entire agreement between you and FlowADHD.
+These Terms, together with our Privacy Policy, constitute the entire agreement between you and focusFlow.
 
 ### 15.2 Severability
 If any provision of these Terms is found invalid or unenforceable, the remaining provisions will remain in full effect.
@@ -332,9 +332,9 @@ We may update these Terms from time to time. Changes will be posted on this page
 
 If you have questions about these Terms, contact us:
 
-📧 **Email:** legal@flowadhd.com  
+📧 **Email:** legal@focusflow.com  
 📍 **Mailing Address:**  
-FlowADHD  
+focusFlow  
 Via Example, 123  
 25100 Brescia (BS)  
 Italy
@@ -343,7 +343,7 @@ Italy
 
 ## 18. ACKNOWLEDGMENT
 
-**By using FlowADHD, you acknowledge that:**
+**By using focusFlow, you acknowledge that:**
 - You have read and understood these Terms
 - You agree to be bound by these Terms
 - You are at least 16 years old
@@ -357,4 +357,4 @@ If you do not agree, you may not use the Service.
 
 ---
 
-**FlowADHD — Created with care for those who see the world differently.** 🌊
+**focusFlow — Created with care for those who see the world differently.** 🌊

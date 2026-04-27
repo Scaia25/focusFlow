@@ -1,4 +1,4 @@
-# Analisi Indicatori di Redditività — FlowADHD
+# Analisi Indicatori di Redditività — focusFlow
 **ROI | Payback Period | VAN | TIR**
 
 ---
@@ -9,7 +9,7 @@
 | **Voce** | **Dettaglio** | **Importo** |
 |----------|--------------|-------------|
 | Sviluppo Interno | 75 ore × €15/h | €1.125 |
-| Dominio + SSL | flowadhd.com (1 anno) | €12 |
+| Dominio + SSL | focusflow.com (1 anno) | €12 |
 | **TOTALE INVESTIMENTO** | — | **€1.137** |
 
 ### Parametri Operativi
@@ -71,9 +71,9 @@ ROI = 7.719%
 
 ### ✅ Interpretazione ROI
 
-**Per ogni €1 investito, FlowADHD genera €77,19 di ritorno nel primo anno.**
+**Per ogni €1 investito, focusFlow genera €77,19 di ritorno nel primo anno.**
 
-| **ROI** | **Soglia Eccellente** | **FlowADHD** | **Giudizio** |
+| **ROI** | **Soglia Eccellente** | **focusFlow** | **Giudizio** |
 |---------|---------------------|-------------|-------------|
 | Standard startup | > 200% | **7.719%** | ⭐⭐⭐⭐⭐ STRAORDINARIO |
 | Standard business | > 15% | **7.719%** | ⭐⭐⭐⭐⭐ ECCEZIONALE |
@@ -129,7 +129,7 @@ Payback Period ≈ 2,7 mesi
 
 ### 📈 Interpretazione Payback Period
 
-| **Settore** | **Payback Tipico** | **FlowADHD** | **Giudizio** |
+| **Settore** | **Payback Tipico** | **focusFlow** | **Giudizio** |
 |------------|-------------------|-------------|-------------|
 | SaaS B2C | 12-18 mesi | **2,7 mesi** | ⭐⭐⭐⭐⭐ ECCEZIONALE |
 | Startup tech | 24-36 mesi | **2,7 mesi** | ⭐⭐⭐⭐⭐ STRAORDINARIO |
@@ -211,7 +211,7 @@ VAN = +€390.457
 | **VAN = 0** | Progetto in pareggio | ⚠️ VALUTARE |
 | **VAN < 0** | Il progetto distrugge valore | ❌ RIFIUTARE |
 
-**FlowADHD: VAN = +€390.457**
+**focusFlow: VAN = +€390.457**
 
 **Interpretazione:**
 - Il progetto crea **€390K di valore** oltre al rimborso dell'investimento
@@ -263,7 +263,7 @@ VAN ≈ €1.133 - €1.137 ≈ €-4 ≈ 0 ✅ (errore di arrotondamento accett
 
 ### ✅ Interpretazione TIR
 
-| **Confronto** | **Tasso** | **FlowADHD TIR** | **Giudizio** |
+| **Confronto** | **Tasso** | **focusFlow TIR** | **Giudizio** |
 |--------------|----------|----------------|-------------|
 | **Costo del Capitale** | 10% | **7.650%** | ⭐⭐⭐⭐⭐ ECCEZIONALE |
 | **Tasso Risk-Free (BTP)** | 3% | **7.650%** | ⭐⭐⭐⭐⭐ STRAORDINARIO |
@@ -291,7 +291,7 @@ Un TIR >7.000% è **raro ma legittimo** in progetti con:
 
 ### 📊 Tabella Decisionale
 
-| **Indicatore** | **Valore Calcolato** | **Soglia Minima** | **Soglia Eccellenza** | **Giudizio FlowADHD** |
+| **Indicatore** | **Valore Calcolato** | **Soglia Minima** | **Soglia Eccellenza** | **Giudizio focusFlow** |
 |----------------|---------------------|------------------|---------------------|---------------------|
 | **ROI Anno 1** | **7.719%** | > 15% | > 200% | ⭐⭐⭐⭐⭐ STRAORDINARIO |
 | **Payback Period** | **2,7 mesi** | < 24 mesi | < 12 mesi | ⭐⭐⭐⭐⭐ ECCEZIONALE |
@@ -308,7 +308,7 @@ Un TIR >7.000% è **raro ma legittimo** in progetti con:
 ✅ **VAN positivo enorme** → Creazione di valore €390K+  
 ✅ **TIR superiore a qualsiasi benchmark** → Rendimento eccezionale  
 
-**DECISIONE:** Il progetto FlowADHD è **FINANZIARIAMENTE ECCELLENTE** e deve essere **APPROVATO IMMEDIATAMENTE**.
+**DECISIONE:** Il progetto focusFlow è **FINANZIARIAMENTE ECCELLENTE** e deve essere **APPROVATO IMMEDIATAMENTE**.
 
 ---
 
@@ -371,7 +371,7 @@ Un TIR >7.000% è **raro ma legittimo** in progetti con:
 
 ### ✅ Sintesi Finale
 
-FlowADHD presenta indicatori finanziari **straordinari** in tutti gli scenari:
+focusFlow presenta indicatori finanziari **straordinari** in tutti gli scenari:
 
 1. **ROI 7.719%** → Uno dei ritorni più alti possibili per un progetto digital
 2. **Payback 2,7 mesi** → Recupero quasi immediato del capitale
@@ -417,14 +417,14 @@ FlowADHD presenta indicatori finanziari **straordinari** in tutti gli scenari:
 1. ✅ Approvare il progetto (decisione immediata)
 2. ✅ Iniziare sviluppo Sprint 1 (questa settimana)
 3. ✅ Setup infrastruttura (Railway + PostgreSQL)
-4. ✅ Registrare dominio flowadhd.com
+4. ✅ Registrare dominio focusflow.com
 5. ✅ Aprire account Stripe Business
 
 ---
 
 **DECISIONE FINALE: PROGETTO APPROVATO ✅**
 
-Il rapporto rischio/rendimento di FlowADHD è **eccezionale**. L'investimento di €1.137 può generare oltre €390K di valore in 3 anni, con un recupero del capitale in meno di 3 mesi.
+Il rapporto rischio/rendimento di focusFlow è **eccezionale**. L'investimento di €1.137 può generare oltre €390K di valore in 3 anni, con un recupero del capitale in meno di 3 mesi.
 
 **Non ci sono ragioni finanziarie per NON procedere.**
 
@@ -432,4 +432,4 @@ Il rapporto rischio/rendimento di FlowADHD è **eccezionale**. L'investimento di
 
 *Analisi redatta il: 11 Aprile 2026*  
 *Metodologia: ROI, Payback Period, VAN (DCF), TIR (IRR)*  
-*Autore: Team FlowADHD — Financial Analysis*
+*Autore: Team focusFlow — Financial Analysis*

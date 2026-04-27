@@ -1,11 +1,11 @@
-# Studio di Fattibilità — FlowADHD (VERSIONE AGGIORNATA)
+# Studio di Fattibilità — focusFlow (VERSIONE AGGIORNATA)
 **Deep Focus PWA per persone con ADHD**
 
 ---
 
 ## 1. EXECUTIVE SUMMARY
 
-**FlowADHD** è una Progressive Web App (PWA) progettata come "protesi cognitiva" per persone con ADHD, che mira a risolvere problemi di time blindness, paralisi decisionale e dispersione dell'attenzione attraverso un'interfaccia minimalista e un assistente AI dedicato.
+**focusFlow** è una Progressive Web App (PWA) progettata come "protesi cognitiva" per persone con ADHD, che mira a risolvere problemi di time blindness, paralisi decisionale e dispersione dell'attenzione attraverso un'interfaccia minimalista e un assistente AI dedicato.
 
 ### Obiettivi Strategici
 - Offrire un ambiente digitale premium a €5/mese
@@ -84,7 +84,7 @@
 |----------|--------------|-----------|
 | **Sviluppo Interno** | 75 ore × €15/h (25 settimane × 3h/settimana) | **€1.125** |
 | **Hosting Iniziale** | Railway/Render tier gratuito (primi 3 mesi) | €0 |
-| **Dominio + SSL** | flowadhd.com (1 anno) | €12 |
+| **Dominio + SSL** | focusflow.com (1 anno) | €12 |
 | **Design Assets** | Font, icone (gratis da Google Fonts/Heroicons) | €0 |
 | **TOTALE INVESTIMENTO INIZIALE** | — | **€1.137** |
 
@@ -161,7 +161,7 @@
 - Investimento Iniziale = €1.137
 - ROI = (€87.778 / €1.137) × 100 = **7.719%**
 
-**Interpretazione:** Per ogni €1 investito, FlowADHD genera €77,19 di ritorno nel primo anno. **ROI eccezionale.**
+**Interpretazione:** Per ogni €1 investito, focusFlow genera €77,19 di ritorno nel primo anno. **ROI eccezionale.**
 
 ---
 
@@ -331,7 +331,7 @@ Il target ADHD è sottovalutato dai competitor generalisti. La combinazione AI +
 
 ### 📊 **DECISIONE FINALE**
 
-Il progetto FlowADHD è **ALTAMENTE FATTIBILE** e presenta metriche finanziarie **straordinarie**:
+Il progetto focusFlow è **ALTAMENTE FATTIBILE** e presenta metriche finanziarie **straordinarie**:
 
 | **Metrica Chiave** | **Valore** | **Giudizio** |
 |-------------------|----------|-------------|
@@ -357,7 +357,7 @@ Il progetto FlowADHD è **ALTAMENTE FATTIBILE** e presenta metriche finanziarie 
 **Prossimi Step Immediati:**
 1. ✅ Approvazione studio di fattibilità
 2. ✅ Setup ambiente sviluppo (Node.js + PostgreSQL)
-3. ✅ Registrazione dominio flowadhd.com
+3. ✅ Registrazione dominio focusflow.com
 4. ✅ Apertura account Stripe per pagamenti
 5. ✅ Inizio Sprint 1 (settimana 1)
 
@@ -365,8 +365,8 @@ Il progetto FlowADHD è **ALTAMENTE FATTIBILE** e presenta metriche finanziarie 
 
 *Documento redatto il: 11 Aprile 2026*  
 *Versione: 2.0 (AGGIORNATA CON DATI REALI)*  
-*Autore: Team FlowADHD*
+*Autore: Team focusFlow*
 
 ---
 
-**FlowADHD — Un progetto con il migliore rapporto rischio/rendimento possibile.** 🚀
+**focusFlow — Un progetto con il migliore rapporto rischio/rendimento possibile.** 🚀

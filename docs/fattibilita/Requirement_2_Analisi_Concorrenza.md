@@ -1,5 +1,5 @@
 # REQUIREMENT 2: Analisi della Concorrenza e Best Practice
-**Progetto:** FlowADHD — Deep Focus PWA  
+**Progetto:** focusFlow — Deep Focus PWA  
 **Data:** 10 Aprile 2026  
 **Metodologia:** Analisi comparativa di 8 competitor diretti e indiretti
 
@@ -53,12 +53,12 @@ L'analisi della concorrenza è stata condotta per:
   - ❌ Richiede connessione costante (no offline)
 
 #### 💡 Best Practice da Adottare
-- **Body Doubling Virtuale:** Implementare in FlowADHD V2.0 come feature premium
+- **Body Doubling Virtuale:** Implementare in focusFlow V2.0 come feature premium
 - **Sessioni Guidate:** Potremmo offrire sessioni AI-guidate invece di facilitatori umani (costo inferiore)
 
 #### 🎯 Opportunità di Differenziazione
-- FlowADHD avrà task management integrato (Centered non ce l'ha)
-- FlowADHD sarà più economico (€5 vs $8)
+- focusFlow avrà task management integrato (Centered non ce l'ha)
+- focusFlow sarà più economico (€5 vs $8)
 
 ---
 
@@ -82,8 +82,8 @@ L'analisi della concorrenza è stata condotta per:
 - **Community:** Forum/Discord integrato per peer support
 
 #### 🎯 Opportunità di Differenziazione
-- FlowADHD avrà AI conversazionale (Inflow non ce l'ha)
-- FlowADHD sarà 3x più economico (€5 vs €14)
+- focusFlow avrà AI conversazionale (Inflow non ce l'ha)
+- focusFlow sarà 3x più economico (€5 vs €14)
 
 ---
 
@@ -104,13 +104,13 @@ L'analisi della concorrenza è stata condotta per:
   - ❌ Modello non sostenibile a lungo termine (dipende da donazioni)
 
 #### 💡 Best Practice da Adottare
-- **Magic ToDo:** Questa è la feature che TUTTI gli utenti ADHD vogliono. FlowADHD DEVE averla (Brain Dump AI).
+- **Magic ToDo:** Questa è la feature che TUTTI gli utenti ADHD vogliono. focusFlow DEVE averla (Brain Dump AI).
 - **Tone Shifter (Formalizer):** Potremmo integrare una funzione simile per email/messaggi
 
 #### 🎯 Opportunità di Differenziazione
-- Goblin Tools non ha timer/visualizzazione tempo (FlowADHD sì)
-- Goblin Tools non ha persistenza cloud (FlowADHD sì)
-- Goblin Tools potrebbe chiudere domani (FlowADHD è sostenibile con €5/mese)
+- Goblin Tools non ha timer/visualizzazione tempo (focusFlow sì)
+- Goblin Tools non ha persistenza cloud (focusFlow sì)
+- Goblin Tools potrebbe chiudere domani (focusFlow è sostenibile con €5/mese)
 
 #### ⚠️ RISCHIO CRITICO
 Se Goblin Tools implementasse sincronizzazione cloud + pricing (es. €3/mese), diventerebbe competitor mortale. **Dobbiamo lanciare PRIMA che questo accada.**
@@ -135,8 +135,8 @@ Se Goblin Tools implementasse sincronizzazione cloud + pricing (es. €3/mese), 
 - **NLP per Input Rapido:** "Brain Dump vocale con parsing automatico date/orari"
 
 #### 🎯 Opportunità di Differenziazione
-- FlowADHD avrà UX minimalista (vs. Todoist sovraccarico)
-- FlowADHD nasconderà complessità (Todoist la espone tutta)
+- focusFlow avrà UX minimalista (vs. Todoist sovraccarico)
+- focusFlow nasconderà complessità (Todoist la espone tutta)
 
 ---
 
@@ -158,7 +158,7 @@ Se Goblin Tools implementasse sincronizzazione cloud + pricing (es. €3/mese), 
 - **Blocco App Distraenti:** Integrazione opzionale per bloccare social durante focus session
 
 #### 🎯 Opportunità di Differenziazione
-- FlowADHD avrà Radar Temporale (Forest non visualizza "dove sei nella giornata")
+- focusFlow avrà Radar Temporale (Forest non visualizza "dove sei nella giornata")
 
 ---
 
@@ -181,8 +181,8 @@ Se Goblin Tools implementasse sincronizzazione cloud + pricing (es. €3/mese), 
 - **Design System di Qualità:** Investire in UI/UX premium (glassmorphism, animazioni fluide)
 
 #### 🎯 Opportunità di Differenziazione
-- FlowADHD sarà multipiattaforma (vs. Structured solo Apple)
-- FlowADHD avrà time-blocking "flessibile" (non rigido come Structured)
+- focusFlow sarà multipiattaforma (vs. Structured solo Apple)
+- focusFlow avrà time-blocking "flessibile" (non rigido come Structured)
 
 ---
 
@@ -190,7 +190,7 @@ Se Goblin Tools implementasse sincronizzazione cloud + pricing (es. €3/mese), 
 
 ### 4.1 Feature Comparison Matrix
 
-| **Funzionalità** | **FlowADHD** | **Centered** | **Inflow** | **Goblin Tools** | **Todoist** | **Forest** | **Structured** |
+| **Funzionalità** | **focusFlow** | **Centered** | **Inflow** | **Goblin Tools** | **Todoist** | **Forest** | **Structured** |
 |------------------|-------------|-------------|-----------|----------------|-----------|---------|--------------|
 | **Timer Visuale** | ✅ | ✅ | ❌ | ❌ | ❌ | ✅ | ✅ |
 | **Task Management** | ✅ | ❌ | ⚠️ (habits) | ⚠️ (base) | ✅ | ❌ | ✅ |
@@ -202,11 +202,11 @@ Se Goblin Tools implementasse sincronizzazione cloud + pricing (es. €3/mese), 
 | **Multipiattaforma** | ✅ | ✅ | ✅ | ✅ (web) | ✅ | ✅ | ❌ (solo Apple) |
 | **Prezzo/mese** | **€5** | $8 | $15 | Gratis | €4 | €3.99 (unico) | €40/anno |
 
-### 4.2 Unique Value Proposition di FlowADHD
+### 4.2 Unique Value Proposition di focusFlow
 
 ```
 ┌─────────────────────────────────────────────────────┐
-│  FlowADHD = Goblin Tools + Centered + Structured    │
+│  focusFlow = Goblin Tools + Centered + Structured    │
 │           (AI)        (Timer)    (UX Premium)        │
 │                                                      │
 │  🎯 "La PRIMA app che combina AI, timer e UX       │
@@ -223,7 +223,7 @@ Se Goblin Tools implementasse sincronizzazione cloud + pricing (es. €3/mese), 
 |---------|----------------|---------------------|----------------------------|
 | Goblin Tools | €0 | Alto | ⭐⭐⭐⭐⭐ |
 | Todoist | €4 | Medio | ⭐⭐⭐⭐ |
-| **FlowADHD** | **€5** | **Alto** | **⭐⭐⭐⭐⭐** |
+| **focusFlow** | **€5** | **Alto** | **⭐⭐⭐⭐⭐** |
 | Centered | $8 (~€7.50) | Medio-Alto | ⭐⭐⭐ |
 | Notion | €8 | Medio | ⭐⭐⭐ |
 | Inflow | $15 (~€14) | Alto | ⭐⭐ |
@@ -240,7 +240,7 @@ Se Goblin Tools implementasse sincronizzazione cloud + pricing (es. €3/mese), 
 ## 6. BEST PRACTICE IDENTIFICATE
 
 ### 6.1 UX/UI Design
-| **Best Practice** | **Fonte** | **Implementazione in FlowADHD** |
+| **Best Practice** | **Fonte** | **Implementazione in focusFlow** |
 |-------------------|-----------|--------------------------------|
 | Drag-and-drop fluido | Structured | Riorganizzazione task nel backlog |
 | Animazioni micro-interazioni | Structured | Feedback tattile su ogni azione |
@@ -249,7 +249,7 @@ Se Goblin Tools implementasse sincronizzazione cloud + pricing (es. €3/mese), 
 | Glassmorphism UI | Apple Ecosystem | Dashboard con effetti sfocati |
 
 ### 6.2 Funzionalità Core
-| **Best Practice** | **Fonte** | **Implementazione in FlowADHD** |
+| **Best Practice** | **Fonte** | **Implementazione in focusFlow** |
 |-------------------|-----------|--------------------------------|
 | AI task decomposition | Goblin Tools ⭐ | Brain Dump AI (priorità #1) |
 | Natural Language Input | Todoist | "Aggiungi task vocale con parsing date" |
@@ -258,7 +258,7 @@ Se Goblin Tools implementasse sincronizzazione cloud + pricing (es. €3/mese), 
 | Educational content | Inflow | Sezione "ADHD Tips" nel menu |
 
 ### 6.3 Monetizzazione
-| **Best Practice** | **Fonte** | **Implementazione in FlowADHD** |
+| **Best Practice** | **Fonte** | **Implementazione in focusFlow** |
 |-------------------|-----------|--------------------------------|
 | Trial gratuito 14 giorni | Notion, Todoist | Standard per SaaS |
 | Referral program | Todoist | 1 mese gratis per ogni amico |
@@ -273,20 +273,20 @@ Se Goblin Tools implementasse sincronizzazione cloud + pricing (es. €3/mese), 
 - Centered ha timer ma non AI
 - Nessuno ha "Memoria Esterna" semantica
 
-**→ FlowADHD colma questo gap**
+**→ focusFlow colma questo gap**
 
 ### 🎯 **GAP #2: Prezzo Medio Troppo Alto**
 - Inflow costa €14/mese (proibitivo per studenti)
 - Centered costa €7.50/mese (nessun tier gratuito)
 - Structured costa €3.33/mese (solo Apple)
 
-**→ FlowADHD a €5/mese è accessibile + multipiattaforma**
+**→ focusFlow a €5/mese è accessibile + multipiattaforma**
 
 ### 🎯 **GAP #3: UX Complessa o Troppo Semplice**
 - Todoist/Notion = troppo complessi
 - Goblin Tools = troppo basic (no cloud, no timer)
 
-**→ FlowADHD bilancia semplicità e potenza**
+**→ focusFlow bilancia semplicità e potenza**
 
 ---
 
@@ -353,11 +353,11 @@ Se Goblin Tools implementasse sincronizzazione cloud + pricing (es. €3/mese), 
 1. ✅ Implementare RF06 (Magic ToDo) come priorità #1 nell'MVP
 2. ✅ Copiare UX glassmorphism di Structured (è open source? verificare licenza)
 3. ✅ Contattare community ADHD di Goblin Tools per beta testing (acquisire early adopters)
-4. ✅ Preparare comparazione diretta FlowADHD vs. Goblin Tools per landing page
+4. ✅ Preparare comparazione diretta focusFlow vs. Goblin Tools per landing page
 5. ✅ Monitorare aggiornamenti Goblin Tools ogni settimana (GitHub watch)
 
 ---
 
-*Analisi condotta da: Team FlowADHD*  
+*Analisi condotta da: Team focusFlow*  
 *Data: 10 Aprile 2026*  
 *Prossimo aggiornamento: Giugno 2026 (post-lancio MVP)*
