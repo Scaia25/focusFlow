@@ -1,9 +1,5 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
-require_once('connection.php');
+require('../../backend/connection.php');
 
 session_start();
 
@@ -51,8 +47,8 @@ if (!isset($_SESSION['user']['isLogged']) || !$_SESSION['user']['isLogged']) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>focusFlow — Accedi</title>
-    <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="login-signup.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/login-signup.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap"

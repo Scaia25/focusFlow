@@ -1,8 +1,5 @@
 <?php
-ini_set('display_errors', '1');
-ini_set('display_startup_errors', '1');
-error_reporting(E_ALL);
-require_once('connection.php');
+require('../../backend/connection.php');
 
 session_start();
 
@@ -70,7 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
             if ($time1 < $time2) {
                 $query = "UPDATE users SET work_start = ?, work_end = ?, type = ? WHERE email = ?";
                 $stmt = $conn->prepare($query);
-                $stmt->bind_param("ssss", $newWork_end, $newWork_start, $newType, $email);
+                $stmt->bind_param("ssss", $newWork_start, $newWork_end, $newType, $email);
                 if ($stmt->execute()) {
                     $_SESSION['user']['work_start'] = $newWork_start;
                     $_SESSION['user']['work_end'] = $newWork_end;
@@ -132,8 +129,8 @@ $work_end = new DateTime($work_end);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Impostazioni — FocusFlow</title>
-    <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="settings.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/settings.css">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap"
         rel="stylesheet">
 </head>
@@ -146,7 +143,7 @@ $work_end = new DateTime($work_end);
                 <h1>Impostazioni ⚙️</h1>
                 <p>Personalizza la tua esperienza.</p>
             </div>
-            <a href="logout.php" class="logout-link">Logout</a>
+            <a href="../../backend/logout.php" class="logout-link">Logout</a>
         </header>
 
         <main class="settings-content">
@@ -236,7 +233,7 @@ $work_end = new DateTime($work_end);
         <nav class="nav-wrapper">
             <div class="bottom-nav">
                 <a href="dashboard.php" class="nav-item">🏠 <span class="label">Oggi</span></a>
-                <a href="#" class="nav-item">💬 <span class="label">AI Chat</span></a>
+                <a href="chat.php" class="nav-item">💬 <span class="label">AI Chat</span></a>
                 <div class="nav-add"><a href="insert.php"><button class="add-button">+</button></a></div>
                 <a href="diary.php" class="nav-item">🗒 <span class="label">Diario</span></a>
                 <a href="settings.php" class="nav-item">⚙️ <span class="label">Settings</span></a>
@@ -253,6 +250,8 @@ $work_end = new DateTime($work_end);
             }
         }
     </script>
+
+    <script src="../js/script.js"></script>
 </body>
 
 </html>

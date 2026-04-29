@@ -1,6 +1,6 @@
 <?php
-require('connection.php');
-require('functions.php');
+require('../../backend/connection.php');
+require('../../backend/functions.php');
 
 session_start();
 
@@ -31,8 +31,8 @@ $resTasks = $stmt->get_result();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Diario — FocusFlow</title>
-    <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="diary.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/diary.css">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap"
         rel="stylesheet">
 </head>
@@ -114,7 +114,7 @@ $resTasks = $stmt->get_result();
         <nav class="nav-wrapper">
             <div class="bottom-nav">
                 <a href="dashboard.php" class="nav-item">🏠 <span class="label">Oggi</span></a>
-                <a href="#" class="nav-item">💬 <span class="label">AI Chat</span></a>
+                <a href="chat.php" class="nav-item">💬 <span class="label">AI Chat</span></a>
                 <div class="nav-add"><a href="insert.php"><button class="add-button">+</button></a></div>
                 <a href="diary.php" class="nav-item">🗒 <span class="label">Diario</span></a>
                 <a href="settings.php" class="nav-item">⚙️ <span class="label">Settings</span></a>

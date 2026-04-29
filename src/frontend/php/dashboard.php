@@ -1,5 +1,5 @@
 <?php
-require_once('connection.php');
+require('../../backend/connection.php');
 
 session_start();
 
@@ -38,7 +38,7 @@ $work_end = (double) $work_end[0] + ($work_end[1] / 60) + ($work_end[2] / 3600);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>FocusFlow — Deep Focus</title>
-    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="../css/base.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap"
@@ -125,7 +125,9 @@ $work_end = (double) $work_end[0] + ($work_end[1] / 60) + ($work_end[2] / 3600);
 
                             // Pulizia dati per HTML
                             $desc = htmlspecialchars($row['description'], ENT_QUOTES, 'UTF-8');
-                            $time = htmlspecialchars($row['task_hour'], ENT_QUOTES, 'UTF-8');
+                            $time = new DateTime($row['task_hour']);
+                            $time = $time->format('G:i');
+                            $time = htmlspecialchars($time, ENT_QUOTES, 'UTF-8');
 
                             echo '<div class="task-card">
                                     <div class="task-icon">' . $taskNumber . '</div>
@@ -153,9 +155,9 @@ $work_end = (double) $work_end[0] + ($work_end[1] / 60) + ($work_end[2] / 3600);
         <nav class="nav-wrapper">
             <div class="bottom-nav">
                 <a href="dashboard.php" class="nav-item">🏠 <span class="label">Oggi</span></a>
-                <a href="#" class="nav-item">💬 <span class="label">AI Chat</span></a>
+                <a href="chat.php" class="nav-item active">💬 <span class="label">AI Chat</span></a>
                 <div class="nav-add"><a href="insert.php"><button class="add-button">+</button></a></div>
-                <a href="diary.php" class="nav-item">🗒 <span class="label">Diario</span></a>
+                <a href="diary.php" class="nav-item">🧠 <span class="label">Memoria</span></a>
                 <a href="settings.php" class="nav-item">⚙️ <span class="label">Settings</span></a>
             </div>
         </nav>
@@ -175,7 +177,7 @@ $work_end = (double) $work_end[0] + ($work_end[1] / 60) + ($work_end[2] / 3600);
         let type = <?php echo json_encode($type); ?>;
     </script>
 
-    <script src="script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>

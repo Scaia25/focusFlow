@@ -118,7 +118,7 @@
     background: white;
     border-radius: 30px;
     padding: 10px;
-    box-shadow: 0 40px 100px rgba(0,0,0,0.1);
+    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.1);
     border: 1px solid #e2e8f0;
 }
 
@@ -137,7 +137,10 @@
 .mockup-screen {
     background: var(--bg-color);
     border-radius: 20px;
-    height: 480px;
+    height: auto;
+    /* Cambia da 480px a auto per adattarsi all'immagine */
+    min-height: 400px;
+    /* Mantiene una dimensione minima estetica */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -150,7 +153,16 @@
     font-weight: 600;
     font-size: 14px;
     text-align: center;
-    padding: 40px;
+    width: 100%;
+    padding: 20px;
+    /* Ridotto rispetto ai 40px originali */
+}
+
+.placeholder-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
 }
 
 /* --- Features & Pricing --- */
@@ -220,7 +232,7 @@
 
 .price-card li {
     padding: 12px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     font-weight: 600;
 }
 

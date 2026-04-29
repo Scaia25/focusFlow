@@ -1,5 +1,5 @@
 <?php
-require_once('connection.php');
+require('../../backend/connection.php');
 
 session_start();
 
@@ -205,8 +205,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Aggiungi al diario — FocusFlow</title>
-    <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="insert.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/insert.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap"
@@ -258,7 +258,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <nav class="nav-wrapper">
             <div class="bottom-nav">
                 <a href="dashboard.php" class="nav-item">🏠 <span class="label">Oggi</span></a>
-                <a href="#" class="nav-item">💬 <span class="label">AI Chat</span></a>
+                <a href="chat.php" class="nav-item">💬 <span class="label">AI Chat</span></a>
                 <div class="nav-add"><a href="insert.php"><button class="add-button">+</button></a></div>
                 <a href="diary.php" class="nav-item">🗒 <span class="label">Diario</span></a>
                 <a href="settings.php" class="nav-item">⚙️ <span class="label">Settings</span></a>

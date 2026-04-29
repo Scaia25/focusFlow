@@ -1,5 +1,5 @@
 <?php
-require_once('connection.php');
+require('../../backend/connection.php');
 session_start();
 
 if (!isset($_SESSION['user']) || !$_SESSION['user']['isLogged']) {
@@ -16,8 +16,8 @@ $name = $_SESSION['user']['name'];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>AI Assistant — FocusFlow</title>
-    <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="chat.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/chat.css">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap"
         rel="stylesheet">
 </head>
@@ -100,7 +100,7 @@ $name = $_SESSION['user']['name'];
             appendMessage('ai', 'Sta elaborando i tuoi pensieri...', loadingId);
 
             try {
-                const response = await fetch('chat_functions.php', {
+                const response = await fetch('../../backend/chat_functions.php', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ message: message })

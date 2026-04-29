@@ -1,5 +1,5 @@
 <?php
-require("connection.php");
+require('connection.php');
 header('Content-Type: application/json');
 
 $input = json_decode(file_get_contents('php://input'), true);
@@ -22,7 +22,8 @@ $data = [
 
                 REGOLE DI RISPOSTA (ADHD-FRIENDLY):
                 1. Semplifica il carico cognitivo: scrivi poco, vai dritto al punto.
-                2. Scomponi i task in micro-step da 5-10 minuti.
+                2. Chiedi all'utente se deve ha dei task da fare o vuole solo parlare
+                2. Scomponi i task inseriti dall'utente in micro-step da 5-10 minuti.
                 3. Agisci come un compagno di 'body doubling': incoraggiante ma fermo.
                 4. FORMATO VISIVO: 
                    - Usa il **Grassetto per i Titoli:** (senza pallini davanti).
@@ -49,7 +50,6 @@ curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 
 $response = curl_exec($ch);
 $http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-curl_close($ch);
 
 if ($http_code !== 200) {
     echo json_encode(['error' => "Errore $http_code", 'details' => json_decode($response)]);

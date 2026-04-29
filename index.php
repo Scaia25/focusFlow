@@ -7,8 +7,9 @@
     <title>FocusFlow — La tua protesi cognitiva</title>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="src/base.css">
-    <link rel="stylesheet" href="src/index.css">
+    <link rel="stylesheet" href="src/frontend/css/base.css">
+    <link rel="stylesheet" href="src/frontend/css/index.css">
+    <link rel="stylesheet" href="src/frontend/css/cookie-banner.css">
 </head>
 
 <body>
@@ -16,8 +17,8 @@
     <nav class="landing-nav">
         <div class="logo">FocusFlow<span>🧠</span></div>
         <div class="nav-links">
-            <a href="#" class="btn-login">Accedi</a>
-            <a href="#prezzi" class="btn-cta-nav">Inizia ora</a>
+            <a href="src/frontend/php/login.php" class="btn-login">Accedi</a>
+            <a href="src/frontend/php/signup.php" class="btn-cta-nav">Inizia ora</a>
         </div>
     </nav>
 
@@ -42,7 +43,7 @@
                 </div>
                 <div class="mockup-screen">
                     <div class="placeholder-content">
-                        <span>[Inserisci qui lo screenshot della Dashboard]</span>
+                        <img src="src/frontend/img/dashboard.png" alt="Dashboard utente focusFlow">
                     </div>
                 </div>
             </div>
@@ -86,6 +87,10 @@
     <footer class="landing-footer">
         <p>© 2026 FocusFlow — Creato con cura per chi vede il mondo in modo diverso. 🌊</p>
     </footer>
+
+    <?php require 'src/frontend/php/cookie-banner.php'; ?>
+
+    <script src="src/frontend/js/cookie-banner.js"></script>
 
 </body>
 
