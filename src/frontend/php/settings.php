@@ -220,7 +220,7 @@ $work_end = new DateTime($work_end);
                 <div class="settings-card danger-card">
                     <p>Una volta eliminato l'account, tutti i tuoi dati andranno persi per sempre.</p>
 
-                    <form id="delete-form" action="delete_account.php" method="POST" style="display: none;">
+                    <form id="delete-form" action="../../backend/delete.php" method="POST" style="display: none;">
                         <input type="hidden" name="confirm_delete" value="1">
                     </form>
 
