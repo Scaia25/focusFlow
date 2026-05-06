@@ -53,7 +53,7 @@ $work_end = (double) $work_end[0] + ($work_end[1] / 60) + ($work_end[2] / 3600);
                 <h1>Ciao, <?php echo $name; ?> 👋</h1>
                 <p>Liberati dalle distrazioni, concentrati sul presente.</p>
             </div>
-            <div class="avatar"><?php echo strtoupper(substr($name, 0, 1)); ?></div>
+            <a class="view-profile" href="settings.php">Visualizza profilo</a>
         </header>
 
         <main class="grid-layout">

@@ -30,7 +30,6 @@ $name = $_SESSION['user']['name'];
                 <h1>AI Assistant ✨</h1>
                 <p>Chiedimi di organizzare i tuoi pensieri.</p>
             </div>
-            <div class="avatar">G</div>
         </header>
 
         <main class="chat-container" id="chat-window">
@@ -79,11 +78,26 @@ $name = $_SESSION['user']['name'];
         }
     </script>
 
+
     <script>
         const chatForm = document.getElementById('chat-form');
         const inputField = document.getElementById('user-input');
         const chatWindow = document.getElementById('chat-window');
 
+        // ARRAY PER LA CRONOLOGIA DELLA CONVERSAZIONE
+        let conversationHistory = [];
+
+        // ✅ NUOVO: Invio con Enter (senza Shift)
+        inputField.addEventListener('keydown', (e) => {
+            // Enter senza Shift = invia
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault(); // Impedisce il newline
+                chatForm.dispatchEvent(new Event('submit')); // Triggera il submit del form
+            }
+            // Shift + Enter = nuova linea (comportamento predefinito, non serve codice)
+        });
+
+        // Event listener esistente per il submit del form
         chatForm.addEventListener('submit', async (e) => {
             e.preventDefault();
 
@@ -92,22 +106,32 @@ $name = $_SESSION['user']['name'];
 
             // 1. Aggiungi messaggio utente alla UI
             appendMessage('user', message);
+
+            // 2. Salva nella cronologia (solo user e model, non il system prompt)
+            conversationHistory.push({
+                role: 'user',
+                content: message
+            });
+
             inputField.value = '';
             inputField.style.height = 'auto';
 
-            // 2. Mostra indicatore caricamento
+            // 3. Mostra indicatore caricamento
             const loadingId = 'loading-' + Date.now();
             appendMessage('ai', 'Sta elaborando i tuoi pensieri...', loadingId);
 
             try {
+                // INVIA L'INTERA CRONOLOGIA
                 const response = await fetch('../../backend/chat_functions.php', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ message: message })
+                    body: JSON.stringify({
+                        messages: conversationHistory  // Invia tutti i messaggi
+                    })
                 });
 
                 const textResponse = await response.text();
-                console.log("Risposta grezza dal server:", textResponse); // Fondamentale per il debug
+                console.log("Risposta grezza dal server:", textResponse);
 
                 const data = JSON.parse(textResponse);
 
@@ -118,11 +142,17 @@ $name = $_SESSION['user']['name'];
                 if (data.candidates && data.candidates[0].content.parts[0].text) {
                     const aiText = data.candidates[0].content.parts[0].text;
 
+                    // SALVA LA RISPOSTA NELLA CRONOLOGIA
+                    conversationHistory.push({
+                        role: 'model',
+                        content: aiText
+                    });
+
                     // TRASFORMAZIONE MARKDOWN -> HTML
                     const formattedText = aiText
-                        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') // Gestisce il grassetto
-                        .replace(/^[ \t]*[\*\-][ \t]+/gm, '• ')           // Converte solo * o - in un pallino pulito
-                        .replace(/\n/g, '<br>');                          // Mantiene gli a capo
+                        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                        .replace(/^[ \t]*[\*\-][ \t]+/gm, '• ')
+                        .replace(/\n/g, '<br>');
 
                     document.getElementById(loadingId).querySelector('.message-content').innerHTML = formattedText;
                 } else {
@@ -132,6 +162,9 @@ $name = $_SESSION['user']['name'];
                 console.error("Dettaglio Errore:", error);
                 document.getElementById(loadingId).querySelector('.message-content').innerText =
                     "Errore: " + error.message;
+
+                // Rimuovi l'ultimo messaggio utente dalla cronologia in caso di errore
+                conversationHistory.pop();
             }
 
             // Scroll fluido in fondo
