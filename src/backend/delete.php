@@ -7,19 +7,6 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
     session_start();
     $email = $_SESSION['user']['email'];
 
-    if (ini_get("session.use_cookies")) {
-        $params = session_get_cookie_params();
-        setcookie(
-            session_name(),
-            '',
-            time() - 42000,
-            $params["path"],
-            $params["domain"],
-            $params["secure"],
-            $params["httponly"]
-        );
-    }
-
     $query = "DELETE FROM tasks WHERE user_email = ?";
     $stmt = $conn->prepare($query);
     $stmt->bind_param("i", $email);
@@ -35,14 +22,18 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
     $stmt->bind_param("i", $email);
     $resUsers = $stmt->execute();
 
-    if(!$resTasks || !$resUsers || !$resNotes) {
+    if (!$resTasks || !$resUsers || !$resNotes) {
         die("Errore di eliminazione dell'utente");
     }
 
-    $_SESSION = array();
+    $_SESSION = [];
     session_destroy();
+
+    echo "<script>localStorage.clear()</script>";
+    
+    $_COOKIE = [];
 }
 
-header("../../index.php");
+header("Location: ../../index.php");
 exit;
 ?>

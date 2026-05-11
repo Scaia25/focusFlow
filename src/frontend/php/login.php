@@ -24,6 +24,9 @@ if (!isset($_SESSION['user']['isLogged']) || !$_SESSION['user']['isLogged']) {
                     $_SESSION['user']['work_start'] = $row['work_start'];
                     $_SESSION['user']['work_end'] = $row['work_end'];
                     $_SESSION['user']['type'] = $row['type'];
+                    $_SESSION['user']['subscription_status'] = $row['subscription_status'];
+                    $_SESSION['user']['trial_ends_at'] = $row['trial_ends_at'];
+                    $_SESSION['user']['subscription_ends_at'] = $row['subscription_ends_at'];
                     $_SESSION['user']['isLogged'] = true;
                     header("Location: dashboard.php");
                     exit();

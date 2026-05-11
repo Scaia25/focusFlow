@@ -241,17 +241,7 @@ $work_end = new DateTime($work_end);
         </nav>
     </div>
 
-    <script>    
-        function handleDelete() {
-            const confirmed = confirm("Sei sicuro di voler eliminare il tuo account? Questa azione è irreversibile.");
-
-            if (confirmed) {
-                document.getElementById('delete-form').submit();
-            }
-        }
-    </script>
-
-    <script src="../js/script.js"></script>
+    <script src="../js/settins.js"></script>
 </body>
 
 </html>

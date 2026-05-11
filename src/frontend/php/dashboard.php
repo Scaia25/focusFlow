@@ -155,9 +155,9 @@ $work_end = (double) $work_end[0] + ($work_end[1] / 60) + ($work_end[2] / 3600);
         <nav class="nav-wrapper">
             <div class="bottom-nav">
                 <a href="dashboard.php" class="nav-item">🏠 <span class="label">Oggi</span></a>
-                <a href="chat.php" class="nav-item active">💬 <span class="label">AI Chat</span></a>
+                <a href="chat.php" class="nav-item">💬 <span class="label">AI Chat</span></a>
                 <div class="nav-add"><a href="insert.php"><button class="add-button">+</button></a></div>
-                <a href="diary.php" class="nav-item">🧠 <span class="label">Memoria</span></a>
+                <a href="diary.php" class="nav-item">🗒 <span class="label">Diario</span></a>
                 <a href="settings.php" class="nav-item">⚙️ <span class="label">Settings</span></a>
             </div>
         </nav>
@@ -177,7 +177,7 @@ $work_end = (double) $work_end[0] + ($work_end[1] / 60) + ($work_end[2] / 3600);
         let type = <?php echo json_encode($type); ?>;
     </script>
 
-    <script src="../js/script.js"></script>
+    <script src="../js/dashboard.js"></script>
 </body>
 
 </html>

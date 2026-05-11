@@ -32,6 +32,29 @@ $name = $_SESSION['user']['name'];
             </div>
         </header>
 
+        <!-- Quick Prompts in evidenza sopra la chat -->
+        <div class="quick-prompts-container">
+            <div class="quick-prompts-scroll">
+                <button class="quick-prompt-btn"
+                    data-prompt="Organizza la mia giornata: ho bisogno di una pianificazione con priorità.">
+                    🗓️ Organizza giornata
+                </button>
+                <button class="quick-prompt-btn"
+                    data-prompt="Aiutami a fare un brain dump: ho troppi pensieri confusi e voglio metterli in ordine.">
+                    🧠 Brain dump
+                </button>
+                <button class="quick-prompt-btn"
+                    data-prompt="Suggerisci una tecnica di focus per concentrarmi meglio in questo momento.">
+                    🎯 Tecnica focus
+                </button>
+                <!-- ✅ NUOVO: Bottone anti-panico -->
+                <button class="quick-prompt-btn panic-btn"
+                    data-prompt="STO AVENDO UN ATTACCO DI PANICO. Aiutami subito: 1. Fammi fare un esercizio di respirazione guidata 2. Aiutami a radicarmi nel presente 3. Ricordami che passerà 4. Dammi un piano d'azione immediato.">
+                    🆘 Anti-panico
+                </button>
+            </div>
+        </div>
+
         <main class="chat-container" id="chat-window">
             <div class="message ai-message">
                 <div class="message-content">
@@ -57,130 +80,15 @@ $name = $_SESSION['user']['name'];
         <nav class="nav-wrapper">
             <div class="bottom-nav">
                 <a href="dashboard.php" class="nav-item">🏠 <span class="label">Oggi</span></a>
-                <a href="chat.php" class="nav-item active">💬 <span class="label">AI Chat</span></a>
+                <a href="chat.php" class="nav-item">💬 <span class="label">AI Chat</span></a>
                 <div class="nav-add"><a href="insert.php"><button class="add-button">+</button></a></div>
-                <a href="diary.php" class="nav-item">🧠 <span class="label">Memoria</span></a>
+                <a href="diary.php" class="nav-item">🗒 <span class="label">Diario</span></a>
                 <a href="settings.php" class="nav-item">⚙️ <span class="label">Settings</span></a>
             </div>
         </nav>
     </div>
 
-    <script>       // Auto-resize textarea
-        const tx = document.getElementsByTagName("textarea");
-        for (let i = 0; i < tx.length; i++) {
-            tx[i].setAttribute("style", "height:" + (tx[i].scrollHeight) + "px;overflow-y:hidden;");
-            tx[i].addEventListener("input", OnInput, false);
-        }
-
-        function OnInput() {
-            this.style.height = "auto";
-            this.style.height = (this.style.scrollHeight) + "px";
-        }
-    </script>
-
-
-    <script>
-        const chatForm = document.getElementById('chat-form');
-        const inputField = document.getElementById('user-input');
-        const chatWindow = document.getElementById('chat-window');
-
-        // ARRAY PER LA CRONOLOGIA DELLA CONVERSAZIONE
-        let conversationHistory = [];
-
-        // ✅ NUOVO: Invio con Enter (senza Shift)
-        inputField.addEventListener('keydown', (e) => {
-            // Enter senza Shift = invia
-            if (e.key === 'Enter' && !e.shiftKey) {
-                e.preventDefault(); // Impedisce il newline
-                chatForm.dispatchEvent(new Event('submit')); // Triggera il submit del form
-            }
-            // Shift + Enter = nuova linea (comportamento predefinito, non serve codice)
-        });
-
-        // Event listener esistente per il submit del form
-        chatForm.addEventListener('submit', async (e) => {
-            e.preventDefault();
-
-            const message = inputField.value.trim();
-            if (!message) return;
-
-            // 1. Aggiungi messaggio utente alla UI
-            appendMessage('user', message);
-
-            // 2. Salva nella cronologia (solo user e model, non il system prompt)
-            conversationHistory.push({
-                role: 'user',
-                content: message
-            });
-
-            inputField.value = '';
-            inputField.style.height = 'auto';
-
-            // 3. Mostra indicatore caricamento
-            const loadingId = 'loading-' + Date.now();
-            appendMessage('ai', 'Sta elaborando i tuoi pensieri...', loadingId);
-
-            try {
-                // INVIA L'INTERA CRONOLOGIA
-                const response = await fetch('../../backend/chat_functions.php', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                        messages: conversationHistory  // Invia tutti i messaggi
-                    })
-                });
-
-                const textResponse = await response.text();
-                console.log("Risposta grezza dal server:", textResponse);
-
-                const data = JSON.parse(textResponse);
-
-                if (data.error) {
-                    throw new Error(data.error + (data.details ? ": " + data.details : ""));
-                }
-
-                if (data.candidates && data.candidates[0].content.parts[0].text) {
-                    const aiText = data.candidates[0].content.parts[0].text;
-
-                    // SALVA LA RISPOSTA NELLA CRONOLOGIA
-                    conversationHistory.push({
-                        role: 'model',
-                        content: aiText
-                    });
-
-                    // TRASFORMAZIONE MARKDOWN -> HTML
-                    const formattedText = aiText
-                        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-                        .replace(/^[ \t]*[\*\-][ \t]+/gm, '• ')
-                        .replace(/\n/g, '<br>');
-
-                    document.getElementById(loadingId).querySelector('.message-content').innerHTML = formattedText;
-                } else {
-                    throw new Error('Formato risposta non valido');
-                }
-            } catch (error) {
-                console.error("Dettaglio Errore:", error);
-                document.getElementById(loadingId).querySelector('.message-content').innerText =
-                    "Errore: " + error.message;
-
-                // Rimuovi l'ultimo messaggio utente dalla cronologia in caso di errore
-                conversationHistory.pop();
-            }
-
-            // Scroll fluido in fondo
-            chatWindow.scrollTo({ top: chatWindow.scrollHeight, behavior: 'smooth' });
-        });
-
-        function appendMessage(role, text, id = null) {
-            const msgDiv = document.createElement('div');
-            msgDiv.className = `message ${role}-message`;
-            if (id) msgDiv.id = id;
-
-            msgDiv.innerHTML = `<div class="message-content">${text}</div>`;
-            chatWindow.appendChild(msgDiv);
-            chatWindow.scrollTop = chatWindow.scrollHeight;
-        }
-    </script>
+    <script src="../js/chat.js"></script>
 </body>
 
 </html>
